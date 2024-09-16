@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgb(168, 184, 255);
+  font: normal 20pt Arial;
+  text-align: center;
+  margin: 10vw;
+}
+
+header {
+  color: white;
+  padding: 3vw;
+}
+
+section {
+  margin: 10vw;
+  background: white;
+  padding: 15vw;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171) ;
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+footer {
+  margin: 10vw;
+  font-style: italic;
+}
