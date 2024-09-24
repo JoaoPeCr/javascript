@@ -6,10 +6,12 @@
   <title>Verificador de Idade</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<!--cria o "ao carregar faça isso".-->
 <body onload="carregar()">
   <header>
     <h1>Verificador de Idade</h1>
   </header>
+  <!--cria o formulário e suas id's.-->
   <section>
     <div>
       <p>Ano de Nascimento:
@@ -22,9 +24,11 @@
         <label for="fem">Feminino</label>
       </p>
       <p>
+        <!--cria o botao onclick pra fazer uma Js.-->
         <input type="button" value="Verificar" onclick="verificar()">
       </p>
     </div>
+    <!--aonde vai sair a resposta.-->
     <div id="res">
       <p>Preencha os dados acima para ver o resultado!</p>
     </div>
@@ -32,6 +36,7 @@
   <footer>
     <p>&copy; João P Corrêa</p>
   </footer>
+  <!--ligação com o Js.-->
   <script src="script.js"></script>
 </body>
 </html>
