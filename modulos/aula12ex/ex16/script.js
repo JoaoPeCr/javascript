@@ -21,7 +21,7 @@ function verificar() {
     //cria a imagem.
     var img = document.createElement('img')
     //adiciona um id='foto' no img.
-    img.setAttribute('id', foto)
+    img.setAttribute('id', 'foto')
     // se masculino..
     if (fsex[0].checked) {
       genero = 'homem'
