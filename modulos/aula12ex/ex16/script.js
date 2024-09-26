@@ -37,7 +37,7 @@ function verificar() {
         img.setAttribute('src', 'fotoadultohomem.jpg')
       } else {
         //idoso
-        img.setAttribute('src', 'fotoidosomulher.jfif')
+        img.setAttribute('src', 'fotoidosohomem.jfif')
       }
     } else if (fsex[1].checked) {
       genero = 'mulher'
