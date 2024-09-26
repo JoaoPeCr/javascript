@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperContador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<!--cria o "ao carregar faça isso".-->
+<body>
+  <header>
+    <h1>Vamos contar!</h1>
+  </header>
+  <!--cria o formulário e suas id's.-->
+  <section>
+    <div>
+      <p>Inicio:
+        <input type="number" name="inicio" id="inInicio" required>
+      </p>
+
+      <p>Fim:
+        <input type="number" name="fim" id="inFim" required>
+      </p>
+
+      <p>Passo:
+        <input type="number" name="passo" id="inPasso" min="1" required>
+      </p>
+      <input type="button" value="Contar" onclick="contar()">
+    </div>
+    <!--aonde vai sair a resposta.-->
+    <div id="res">
+      <p>Preparando a contagem!</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; João P Corrêa</p>
+  </footer>
+  <!--ligação com o Js.-->
+  <script src="script.js"></script>
+</body>
+</html>
