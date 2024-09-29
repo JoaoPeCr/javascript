@@ -1,10 +1,30 @@
 //funçao gerar tabuada
-function tabuada () {
-  // busca o number do formulário
-  var fatorA = Number(document.querySelector('#number'))
-  var res = document.querySelector('#res')
-  //cálculo 
-  for (var fatorB = 1; fatorB  <= 10; fatorB++){
-    res.innerHTML = (`${fatorA} x ${fatorB} = ${fatorA * fatorB}`)
+function tabuada() {
+
+  //busca o número do formulário
+  var number = document.getElementById('inNumber')
+  var res = document.getElementById('res')
+
+  
+  //alerta caso não preencha nada
+  if (number.value.length == 0) {
+    window.alert('[ERRO] Algum campo não foi preenchido')
+  } else {
+
+    //transforma em número
+    var n = Number(number.value)
+    
+    //limpa o campo antes
+    res.innerHTML = ''
+    
+    //calcúlo
+    var c = 1
+    while (c <= 10) {
+      let item = document.createElement('option')  
+      item.text = `${n} x ${c} = ${n * c}`
+      res.appendChild(item)
+      c++
+      res.value = `res${c}`
+    }
   }
 }

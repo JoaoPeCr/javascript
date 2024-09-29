@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabuada</title>
+  <!-- ligação com o css -->
   <link rel="stylesheet" href="style.css">
 </head>
-<!--cria o "ao carregar faça isso".-->
-<body onload="carregar()">
+<body">
   <header>
     <h1>Tabuada</h1>
   </header>
@@ -15,13 +15,15 @@
   <section>
     <div>
       <p>Número:
-        <input type="number" id="number" required>
+        <input type="number" id="inNumber" required>
         <input type="button" value="Gerar Tabuada" onclick="tabuada()">
       </p>
     </div>
     <!--aonde vai sair a resposta.-->
-    <div id="res">
-      <p>Preencha os dados acima para ver o resultado!</p>
+    <div>
+      <select name="tabuada" id="res" size="10">
+        <option>Digite um número acima!</option>
+      </select>
     </div>
   </section>
   <footer>
