@@ -9,7 +9,7 @@ frm.addEventListener("submit", (e) => {
   e.preventDefault()
 
   // transformei a resposta em número
-  const n = Number(frm.inNumero.value)
+  const n = Number(frm.inNumero.value)d
 
   // limpa o campo antes
   let resposta = ""
