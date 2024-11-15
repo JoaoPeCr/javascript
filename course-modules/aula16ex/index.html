@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisador de Números</title>
+  <!-- ligação com o css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body">
+  <header>
+    <h1>Tabuada</h1>
+  </header>
+  <!--cria o formulário e suas id's.-->
+  <section>
+    <div>
+      <p>Número (entre 1 a 100):
+        <input type="number" id="inNumber" required>
+        <input type="button" value="Adicionar" onclick="adicionar()">
+      </p>
+    </div>
+    <!--aonde vai sair a resposta.-->
+    <div>
+      <select name="resgistro" id="saida" size="10">
+        <option>Digite um número acima!</option>
+      </select>
+    </div>
+    <input type="button" value="Finalizar">
+  </section>
+  <footer>
+    <p>&copy; João P Corrêa</p>
+  </footer>
+  <!--ligação com o Js.-->
+  <script src="script.js"></script>
+</body>
+</html>
